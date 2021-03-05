@@ -20,14 +20,17 @@ main {
   width: 960px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 .item-container {
   width: 300px;
   padding: 10px;
   margin: 50px 0;
+  margin-right: 30px;
   position: relative;
   background-color: #eee;
+}
+.item-container:last-child {
+  margin-right: 0;
 }
 .item-num {
   color: #fff;
