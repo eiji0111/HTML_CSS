@@ -1,0 +1,49 @@
+/* 共通
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+.wrapper {
+  width: 960px;
+  margin: 50px auto;
+}
+li {
+  list-style: none;
+}
+
+/* リスト
+============================ */
+li {
+  padding: 20px;
+}
+li:nth-child(odd){
+  background-color: darkgrey;
+}
+li:last-child {
+  margin-bottom: 50px;
+}
+
+/* ボックス
+============================ */
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  height: 200px;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  background-color: gold;
+}
+.item:nth-child(4n+1) {
+  background-color: orange;
+}
+.item:nth-child(3n) {
+  margin-right: 0;
+}
+.item:nth-child(n+7) {
+  margin-bottom: 0;
+}
