@@ -73,6 +73,9 @@ header .header-wrapper nav .nav-list .list a {
   color: #fafafa;
   font-size: 16px;
 }
+header .header-wrapper .fa-bars {
+  display: none;
+}
 
 /* main-view
 =============================== */
@@ -247,8 +250,7 @@ header .header-wrapper nav .nav-list .list a {
 .contact-wrapper .contact-container .mail-container .mail-sub-container {
   width: 130px;
   margin: 0 auto;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 .contact-wrapper .contact-container .mail-container .mail-sub-container .mail-title,
 .contact-wrapper .contact-container .mail-container .mail-sub-container .tel-title {
@@ -294,5 +296,134 @@ footer {
 footer p {
   font-size: 16px;
   color: #fafafa;
+}
+
+/* メディアクエリ
+=============================== */
+@media (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+  header .header-wrapper {
+    width: 90%;
+  }
+  header .header-wrapper .header-logo {
+    height: 50px;
+  }
+  header .header-wrapper nav {
+    display: none;
+  }
+  header .header-wrapper .fa-bars {
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    padding: 5px 0;
+  }
+
+  .main-view {
+    background-image: url(../img/code.png);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    text-align: center;
+  }
+  .main-view .main-view-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-view .main-view-wrapper .main-view-title {
+    padding-top: 200px;
+    font-size: 40px;
+    color: #fafafa;
+  }
+  .main-view .main-view-wrapper .main-view-text {
+    font-size: 18px;
+    color: #fafafa;
+    padding-top: 10px;
+  }
+
+  #portfolio .portfolio-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+  }
+  #portfolio .portfolio-wrapper .item-container {
+    display: block;
+    height: auto;
+  }
+  #portfolio .portfolio-wrapper .item-container .item {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto 10px;
+  }
+  #portfolio .portfolio-wrapper .item-container .item:last-child {
+    margin-bottom: 0;
+  }
+  #portfolio .portfolio-wrapper .item-container .item1, #portfolio .portfolio-wrapper .item-container .item3, #portfolio .portfolio-wrapper .item-container .item5 {
+    display: none;
+  }
+
+  #feature .feature-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+  }
+  #feature .feature-wrapper .card-container {
+    display: block;
+  }
+  #feature .feature-wrapper .card-container .card {
+    margin: 0 auto 10px;
+  }
+
+  #profile .profile-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+  }
+  #profile .profile-wrapper .profile-container {
+    display: block;
+  }
+  #profile .profile-wrapper .profile-container .img-container {
+    width: auto;
+    padding-bottom: 20px;
+  }
+  #profile .profile-wrapper .profile-container .profile-sub-container {
+    width: auto;
+    text-align: center;
+  }
+
+  #contact .contact-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+  }
+  #contact .contact-wrapper .contact-container {
+    display: block;
+  }
+  #contact .contact-wrapper .contact-container .mail-container {
+    width: auto;
+  }
+  #contact .contact-wrapper .contact-container .mail-container .mail-sub-container {
+    text-align: center;
+  }
+  #contact .contact-wrapper .contact-container .mail-container .mail-sub-container .mail-text, #contact .contact-wrapper .contact-container .mail-container .mail-sub-container .tel-text {
+    display: inline-block;
+  }
+  #contact .contact-wrapper .contact-container .sns-container {
+    width: auto;
+  }
+  #contact .contact-wrapper .contact-container .sns-container .sns-sub-container {
+    text-align: center;
+  }
+  #contact .contact-wrapper .contact-container .sns-container .sns-sub-container .fab {
+    padding-right: 8px;
+  }
+  #contact .contact-wrapper .contact-container .sns-container .sns-sub-container .fab:last-child {
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

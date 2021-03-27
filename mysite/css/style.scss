@@ -61,6 +61,9 @@ header {
         }
       }
     }
+    .fa-bars {
+      display: none;
+    }
   }
 }
 /* main-view
@@ -215,7 +218,7 @@ header {
       .mail-sub-container {
         width: 130px;
         margin: 0 auto;
-        text-align-last: left;
+        text-align: left;
         .mail-title,
         .tel-title {
           font-size: 20px;
@@ -263,4 +266,127 @@ footer {
     font-size: 16px;
     color: #fafafa;
   }
+}
+/* メディアクエリ
+=============================== */
+@media(max-width:767px) {
+header {
+  height: 50px;
+  .header-wrapper {
+    width: 90%;
+    .header-logo {
+      height: 50px;
+    }
+    nav {
+      display: none;
+    }
+    .fa-bars {
+      display: block;
+      color: #fff;
+      font-size: 40px;
+      padding: 5px 0;
+    }
+  }
+}
+.main-view {
+  background-image: url(../img/code.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  text-align: center;
+  .main-view-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    .main-view-title {
+      padding-top: 200px;
+      font-size: 40px;
+      color: #fafafa;
+    }
+    .main-view-text {
+      font-size: 18px;
+      color: #fafafa;
+      padding-top: 10px;
+    }
+  }
+}
+#portfolio .portfolio-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+  text-align: center;
+  .item-container {
+    display: block;
+    height: auto;
+    .item {
+      width: 300px;
+      height: 250px;
+      margin: 0 auto 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .item1,.item3,.item5 {
+      display: none;
+    }
+  }
+}
+#feature .feature-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+  text-align: center;
+  .card-container {
+    display: block;
+    .card {
+      margin: 0 auto 10px;
+    }
+  }
+}
+#profile .profile-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+  text-align: center;
+  .profile-container {
+    display: block;
+    .img-container {
+      width: auto;
+      padding-bottom: 20px;
+    }
+    .profile-sub-container {
+      width: auto;
+      text-align: center;
+    }
+  }
+}
+#contact .contact-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+  text-align: center;
+  .contact-container {
+    display: block;
+    .mail-container {
+      width: auto;
+      .mail-sub-container {
+        text-align: center;
+        .mail-text,.tel-text {
+          display: inline-block;
+        }
+      }
+    }
+    .sns-container {
+      width: auto;
+      .sns-sub-container {
+        text-align: center;
+        .fab {
+          padding-right: 8px;
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
 }
