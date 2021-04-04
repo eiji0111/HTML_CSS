@@ -166,20 +166,20 @@ header li:last-child {
   font-size: 15px;
 }
 
-/* contents
+/* news
 ============================= */
-#contents {
+#news {
   width: 80%;
   margin: 15% auto;
 }
-#contents .contents-title {
+#news .news-title {
   font-size: 50px;
   font-weight: bold;
   padding-bottom: 60px;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-#contents .card-container {
+#news .card-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,15 +188,15 @@ header li:last-child {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#contents .card-container .card {
+#news .card-container .card {
   width: 32%;
   -webkit-box-shadow: 0 0 3px #000;
           box-shadow: 0 0 3px #000;
 }
-#contents .card-container .card .card-img {
+#news .card-container .card .card-img {
   width: 100%;
 }
-#contents .card-container .card .card-text {
+#news .card-container .card .card-text {
   font-size: 15px;
   padding: 20px;
 }
@@ -305,10 +305,10 @@ footer p {
     width: 100%;
   }
 
-  #contents .card-container {
+  #news .card-container {
     display: block;
   }
-  #contents .card-container .card {
+  #news .card-container .card {
     width: 100%;
     margin-bottom: 20px;
   }

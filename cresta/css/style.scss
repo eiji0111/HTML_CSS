@@ -142,12 +142,12 @@ header {
   }
 }
 
-/* contents
+/* news
 ============================= */
-#contents {
+#news {
   width: 80%;
   margin: 15% auto;
-  .contents-title {
+  .news-title {
     font-size: 50px;
     font-weight: bold;
     padding-bottom: 60px;
@@ -270,7 +270,7 @@ footer {
       width: 100%;
     }
   }
-  #contents .card-container {
+  #news .card-container {
     display: block;
     .card {
       width: 100%;
