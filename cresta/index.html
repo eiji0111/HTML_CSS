@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cresta 初級編</title>
+  <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/978ef961bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Top-page -->
+  <div class="top-bg">
+    <header>
+      <a class="header-logo" href="index.html">クリ★スタ</a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contents">Contents</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <h1 class="top-text">Cresta Design.</h1>
+    <!-- ハンバーガーメニュー -->
+    <div id="hm-icon">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </div>
+  <!-- About -->
+  <section id="about">
+    <h2 class="about-title">About</h2>
+    <h3 class="about-sub-title">
+      ミニマルで<br>
+      洗練されたデザインを。
+    </h3>
+    <p class="about-text">
+      近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+    </p>
+  </section>
+
+  <section id="service">
+    <h2 class="service-title">Service</h2>
+    <div class="item-container">
+      <div class="text-container">
+        <h3 class="item-title">
+          リリース時のサポートで<br>
+          サービスのブランディングを
+        </h3>
+        <p class="item-text">
+          弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
+        </p>
+      </div>
+      <img src="img/service-image@2x.jpg" alt="カメラ" class="item-img">
+    </div>
+    <div class="item-container2">
+      <div class="text-container">
+        <h3 class="item-title">
+          リリース後のサポートで<br>
+          効果を最大化させる
+        </h3>
+        <p class="item-text">
+          弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
+        </p>
+      </div>
+      <img src="img/service-image02@2x.jpg" alt="携帯" class="item-img">
+    </div>
+  </section>
+
+  <section id="contents">
+    <h2 class="contents-title">Contents</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/card-image1@2x.jpg" alt="カード１" class="card-img">
+        <p class="card-text">
+          新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+        </p>
+      </div>
+      <div class="card">
+        <img src="img/card-image2@2x.jpg" alt="カード２" class="card-img">
+        <p class="card-text">
+          新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+        </p>
+      </div>
+      <div class="card">
+        <img src="img/card-image3@2x.jpg" alt="カード３" class="card-img">
+        <p class="card-text">
+          新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="form-title">お問い合わせ</h2>
+    <form action="#">
+      <div>
+        <lavel for="name">担当者名</lavel>
+        <input type="text" id="name" name="your-name">
+      </div>
+      <div>
+        <lavel for="tel">電話番号</lavel>
+        <input type="text" id="tel" name="tel">
+      </div>
+      <div>
+        <lavel for="email">メールアドレス</lavel>
+        <input type="text" id="email" name="email">
+      </div>
+      <div>
+        <lavel for="message">お問い合わせ内容</lavel>
+        <textarea id="message" name="your-message"></textarea>
+      </div>
+      <input type="submit" class="button" value="送信">
+    </form>
+  </section>
+
+  <footer>
+    <p><small>&copy;crest.design all rights reserved</small></p>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
