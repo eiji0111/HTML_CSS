@@ -1,0 +1,162 @@
+/* 共通
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* font-family: 'Noto Serif JP', serif; 和文 */
+/* font-family: 'Noto Serif', serif; 欧文 */
+
+/* トップページ
+================================ */
+.container {
+  height: 100vh;
+  position: relative;
+}
+header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  top: 0;
+  z-index: 10;
+  .main-logo {
+    margin-right: auto;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Noto Serif', serif;
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .list {
+    color: #fff;
+    font-family: 'Noto Serif', serif;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+.title-container {
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+  text-align: center;
+  z-index: 10;
+  .top-title {
+    color: #fff;
+    font-family: serif;
+    font-size: 50px;
+  }
+  .top-text {
+    color: #fff;
+    font-size: 26px;
+  }
+}
+
+/* コンセプト
+================================ */
+section {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  .consept-title {
+    font-family: serif;
+    text-align-last: left;
+    font-size: 45px;
+    position: relative;
+    &::after {
+      left: 260px;
+      position: absolute;
+      content: "";
+      width: 150px;
+      height: 30px;
+      border-bottom: 3px solid #000;
+    }
+  }
+  .consept-text {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
+  }
+  .item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .item-text {
+      font-size: 12px;
+      padding-right: 30px;
+      text-align-last: left;
+      width: 45%;
+    }
+    .item-image {
+      width: 50%;
+      height: 40%;
+    }
+  }
+  .sub-title {
+    text-align-last: right;
+    font-size: 65px;
+    padding-top: 40px;
+    font-family: serif;
+    color: #828484;
+  }
+}
+
+/* Works
+================================ */
+.works-bg {
+  background: {
+    image: url(../img/works-bgi@2x.jpg);
+    position: center;
+    size: cover;
+  }
+}
+.works-title {
+  font-family: serif;
+  text-align-last: right;
+  font-size: 45px;
+  position: relative;
+  padding: 0 110px;
+  color: #fff;
+  &::after {
+    right: -70px;
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 30px;
+    border-bottom: 3px solid #fff;
+}
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  .card {
+    width: 32%;
+    &-image {
+      width: 100%;
+    }
+    &-text {
+      font-size: 12px;
+      padding: 10px;
+      width: 100%;
+      margin: 0 auto;
+      color: #fff;
+    }
+  }
+}
