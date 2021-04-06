@@ -21,3 +21,14 @@ $(".theTarget").skippr({
   // 1枚目のスライド表示時に戻る矢印を表示するかどうか [false]:矢印を隠さない [true]:矢印を隠す
   hidePrevious: false
 });
+
+var mvh = $('.container').height();
+
+$(window).on('scroll', function () {
+  var top = $(window).scrollTop();
+  if (mvh < top) {
+    $('header').addClass('change-color');
+  } else {
+    $('header').removeClass('change-color');
+  }
+});

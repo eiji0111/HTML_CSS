@@ -14,7 +14,7 @@ li {
 /* font-family: 'Noto Serif JP', serif; 和文 */
 /* font-family: 'Noto Serif', serif; 欧文 */
 
-/* トップページ
+/* fv
 ================================ */
 .container {
   height: 100vh;
@@ -64,99 +64,131 @@ header {
     font-size: 26px;
   }
 }
-
-/* コンセプト
+.change-color {
+  background-color: #282f35;
+}
+/* Concept
 ================================ */
-section {
-  width: 70%;
-  margin: 50px auto;
-  text-align: center;
-  .consept-title {
-    font-family: serif;
-    text-align-last: left;
-    font-size: 45px;
-    position: relative;
-    &::after {
-      left: 260px;
-      position: absolute;
-      content: "";
-      width: 150px;
-      height: 30px;
-      border-bottom: 3px solid #000;
+#concept {
+  .concept-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    .concept-title {
+      font-family: 'Noto Serif', serif;
+      font-size: 45px;
+      padding: 0 100px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 30px;
+        border-bottom: 3px solid #000;
+      }
     }
-  }
-  .consept-text {
-    font-weight: bold;
-    font-size: 20px;
-    padding: 30px;
-  }
-  .item-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    .item-text {
-      font-size: 12px;
-      padding-right: 30px;
-      text-align-last: left;
-      width: 45%;
+    .concept-text {
+      font-weight: bold;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 30px;
+      padding: 50px 0;
+      text-align: center;
     }
-    .item-image {
-      width: 50%;
-      height: 40%;
+    .item-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1000px;
+      margin: 0 auto;
+      .item-text {
+        font-size: 16px;
+        font-family: 'Noto Serif JP', serif;
+        padding-right: 30px;
+        width: 440px;
+      }
+      .item-image {
+        width: 440px;
+        height: 240px;
+      }
     }
-  }
-  .sub-title {
-    text-align-last: right;
-    font-size: 65px;
-    padding-top: 40px;
-    font-family: serif;
-    color: #828484;
+    .sub-title {
+      text-align: right;
+      font-size: 90px;
+      padding-top: 100px;
+      font-family: 'Noto Serif', serif;
+      color: #828484;
+    }
   }
 }
-
 /* Works
 ================================ */
-.works-bg {
+#works {
   background: {
     image: url(../img/works-bgi@2x.jpg);
     position: center;
     size: cover;
   }
-}
-.works-title {
-  font-family: serif;
-  text-align-last: right;
-  font-size: 45px;
-  position: relative;
-  padding: 0 110px;
-  color: #fff;
-  &::after {
-    right: -70px;
-    position: absolute;
-    content: "";
-    width: 150px;
-    height: 30px;
-    border-bottom: 3px solid #fff;
-}
-}
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 20px 0;
-  .card {
-    width: 32%;
-    &-image {
-      width: 100%;
-    }
-    &-text {
-      font-size: 12px;
-      padding: 10px;
-      width: 100%;
-      margin: 0 auto;
+  .works-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+    .works-title {
+      font-family: 'Noto Serif', serif;
+      text-align: right;
+      font-size: 60px;
+      padding-right: 150px;
+      position: relative;
       color: #fff;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 45px;
+        border-bottom: 3px solid #fff;
+      }
     }
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1000px;
+      margin: 0 auto;
+      padding: 50px 0;
+      .card {
+        width: 32%;
+        &-image {
+          width: 100%;
+        }
+        &-text {
+          font-size: 16px;
+          font-family: 'Noto Serif JP', serif;
+          padding: 10px;
+          width: 100%;
+          margin: 0 auto;
+          color: #000;
+          background-color: #fff;
+          text-align: left;
+        }
+      }
+    }
+    .btn {
+      text-align: center;
+      padding: 10px 100px;
+      background-color: rgb(252, 235, 2);
+      color: #000;
+      border-radius: 30px;
+      margin: 0 auto;
+      width: 250px;
+      font-size: 16px;
+      font-family: 'Noto Serif', serif;
+    }
+    .sub-title {
+      font-size: 90px;
+      padding-top: 100px;
+      font-family: 'Noto Serif', serif;
+      color: #828484;
+      text-align-last: left;
+    } 
   }
 }

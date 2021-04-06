@@ -18,7 +18,7 @@ li {
 
 /* font-family: 'Noto Serif JP', serif; 和文 */
 /* font-family: 'Noto Serif', serif; 欧文 */
-/* トップページ
+/* fv
 ================================ */
 .container {
   height: 100vh;
@@ -77,34 +77,38 @@ header .list:hover {
   font-size: 26px;
 }
 
-/* コンセプト
-================================ */
-section {
-  width: 70%;
-  margin: 50px auto;
-  text-align: center;
+.change-color {
+  background-color: #282f35;
 }
-section .consept-title {
-  font-family: serif;
-  -moz-text-align-last: left;
-       text-align-last: left;
+
+/* Concept
+================================ */
+#concept .concept-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#concept .concept-wrapper .concept-title {
+  font-family: "Noto Serif", serif;
   font-size: 45px;
+  padding: 0 100px;
   position: relative;
 }
-section .consept-title::after {
-  left: 260px;
+#concept .concept-wrapper .concept-title::after {
   position: absolute;
   content: "";
   width: 150px;
   height: 30px;
   border-bottom: 3px solid #000;
 }
-section .consept-text {
+#concept .concept-wrapper .concept-text {
   font-weight: bold;
-  font-size: 20px;
-  padding: 30px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 30px;
+  padding: 50px 0;
+  text-align: center;
 }
-section .item-container {
+#concept .concept-wrapper .item-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,55 +118,56 @@ section .item-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 1000px;
+  margin: 0 auto;
 }
-section .item-container .item-text {
-  font-size: 12px;
+#concept .concept-wrapper .item-container .item-text {
+  font-size: 16px;
+  font-family: "Noto Serif JP", serif;
   padding-right: 30px;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  width: 45%;
+  width: 440px;
 }
-section .item-container .item-image {
-  width: 50%;
-  height: 40%;
+#concept .concept-wrapper .item-container .item-image {
+  width: 440px;
+  height: 240px;
 }
-section .sub-title {
-  -moz-text-align-last: right;
-       text-align-last: right;
-  font-size: 65px;
-  padding-top: 40px;
-  font-family: serif;
+#concept .concept-wrapper .sub-title {
+  text-align: right;
+  font-size: 90px;
+  padding-top: 100px;
+  font-family: "Noto Serif", serif;
   color: #828484;
 }
 
 /* Works
 ================================ */
-.works-bg {
+#works {
   background-image: url(../img/works-bgi@2x.jpg);
   background-position: center;
   background-size: cover;
 }
-
-.works-title {
-  font-family: serif;
-  -moz-text-align-last: right;
-       text-align-last: right;
-  font-size: 45px;
+#works .works-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+#works .works-wrapper .works-title {
+  font-family: "Noto Serif", serif;
+  text-align: right;
+  font-size: 60px;
+  padding-right: 150px;
   position: relative;
-  padding: 0 110px;
   color: #fff;
 }
-.works-title::after {
-  right: -70px;
+#works .works-wrapper .works-title::after {
   position: absolute;
   content: "";
   width: 150px;
-  height: 30px;
+  height: 45px;
   border-bottom: 3px solid #fff;
 }
-
-.card-container {
+#works .works-wrapper .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,20 +177,43 @@ section .sub-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  padding: 20px 0;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
-.card-container .card {
+#works .works-wrapper .card-container .card {
   width: 32%;
 }
-.card-container .card-image {
+#works .works-wrapper .card-container .card-image {
   width: 100%;
 }
-.card-container .card-text {
-  font-size: 12px;
+#works .works-wrapper .card-container .card-text {
+  font-size: 16px;
+  font-family: "Noto Serif JP", serif;
   padding: 10px;
   width: 100%;
   margin: 0 auto;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
+  text-align: left;
+}
+#works .works-wrapper .btn {
+  text-align: center;
+  padding: 10px 100px;
+  background-color: #fceb02;
+  color: #000;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 250px;
+  font-size: 16px;
+  font-family: "Noto Serif", serif;
+}
+#works .works-wrapper .sub-title {
+  font-size: 90px;
+  padding-top: 100px;
+  font-family: "Noto Serif", serif;
+  color: #828484;
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 /*# sourceMappingURL=style.css.map */
