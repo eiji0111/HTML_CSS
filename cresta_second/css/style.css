@@ -216,4 +216,73 @@ header .list:hover {
   -moz-text-align-last: left;
        text-align-last: left;
 }
+
+/* Service
+================================ */
+.service-title {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-size: 60px;
+  font-family: "Noto Serif", serif;
+  position: relative;
+}
+.service-title::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 30px;
+  border-bottom: 3px solid #000;
+}
+
+.img-container {
+  width: 100%;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.img-container .img {
+  width: 480px;
+  height: 320px;
+}
+.img-container .img:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+.img-container .img1 {
+  background-image: url(../img/service-img01@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-container .img2 {
+  background-image: url(../img/service-img02@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-container .img3 {
+  background-image: url(../img/sevice-img03@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-container h2 {
+  text-align: center;
+  line-height: 320px;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Noto Serif", serif;
+  z-index: 10;
+}
+
+#service .sub-title {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 90px;
+  padding-bottom: 100px;
+  font-family: "Noto Serif", serif;
+  color: #828484;
+}
 /*# sourceMappingURL=style.css.map */
