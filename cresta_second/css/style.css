@@ -285,4 +285,72 @@ header .list:hover {
   font-family: "Noto Serif", serif;
   color: #828484;
 }
+
+/* Contact
+================================ */
+#contact {
+  width: 100%;
+  background-image: url(../img/contact-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#contact .contact-wrapper {
+  width: 1200px;
+  padding: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+#contact .contact-wrapper .contact-title {
+  width: 100%;
+  text-align: right;
+  padding-right: 80px;
+  padding-bottom: 150px;
+  font-family: "Noto Serif", serif;
+  font-size: 60px;
+  position: relative;
+  color: #fff;
+}
+#contact .contact-wrapper .contact-title::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 45px;
+  border-bottom: 3px solid #fff;
+}
+#contact .contact-wrapper .contact-text {
+  font-size: 20px;
+  font-family: "Noto Serif", serif;
+  color: #fff;
+  padding-bottom: 100px;
+}
+#contact .contact-wrapper .btn {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 30px;
+  background-color: gold;
+  font-size: 16px;
+  font-family: "Noto Serif", serif;
+}
+#contact .contact-wrapper .sub-title {
+  font-size: 90px;
+  padding-top: 100px;
+  font-family: "Noto Serif", serif;
+  color: #828484;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+/* footer
+================================ */
+footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+  font-family: "Noto Serif", serif;
+  color: #000;
+  line-height: 80px;
+}
 /*# sourceMappingURL=style.css.map */
